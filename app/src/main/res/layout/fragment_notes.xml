@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú"
+            android:textColor="@color/cm_text_primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tìm kiếm và lọc ghi chú theo loại"
+            android:textColor="@color/cm_text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_input_soft"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:tint="@color/cm_text_secondary" />
+
+            <EditText
+                android:id="@+id/etSearchNote"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Tìm kiếm ghi chú..."
+                android:textColor="@color/cm_text_primary"
+                android:textColorHint="@color/cm_text_secondary" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chipAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_note_general"
+                    android:gravity="center"
+                    android:minWidth="74dp"
+                    android:paddingHorizontal="14dp"
+                    android:text="Tất cả"
+                    android:textColor="@color/cm_blue_icon"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chipGeneral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_idle"
+                    android:gravity="center"
+                    android:minWidth="74dp"
+                    android:paddingHorizontal="14dp"
+                    android:text="Chung"
+                    android:textColor="@color/cm_text_primary" />
+
+                <TextView
+                    android:id="@+id/chipCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_idle"
+                    android:gravity="center"
+                    android:minWidth="86dp"
+                    android:paddingHorizontal="14dp"
+                    android:text="Cuộc gọi"
+                    android:textColor="@color/cm_text_primary" />
+
+                <TextView
+                    android:id="@+id/chipMeeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_idle"
+                    android:gravity="center"
+                    android:minWidth="90dp"
+                    android:paddingHorizontal="14dp"
+                    android:text="Cuộc họp"
+                    android:textColor="@color/cm_text_primary" />
+
+                <TextView
+                    android:id="@+id/chipIdea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_idle"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:paddingHorizontal="14dp"
+                    android:text="Ý tưởng"
+                    android:textColor="@color/cm_text_primary" />
+
+                <TextView
+                    android:id="@+id/chipTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_idle"
+                    android:gravity="center"
+                    android:minWidth="104dp"
+                    android:paddingHorizontal="14dp"
+                    android:text="Việc cần làm"
+                    android:textColor="@color/cm_text_primary" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvEmptyNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card_soft"
+            android:gravity="center"
+            android:padding="28dp"
+            android:text="Chưa có ghi chú phù hợp"
+            android:textColor="@color/cm_text_secondary"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerNotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="96dp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"
+        android:backgroundTint="@color/cm_primary" />
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_auth_hero"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chào mừng trở lại!"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHeroSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#EEF2FF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:columnCount="2">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_marginEnd="6dp" android:layout_marginBottom="12dp" android:background="@drawable/bg_card_surface" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <FrameLayout android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/bg_icon_blue">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/ic_people_outline" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Liên hệ" android:textColor="@color/cm_text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvTotalContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/cm_text_primary" android:textSize="24sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_marginStart="6dp" android:layout_marginBottom="12dp" android:background="@drawable/bg_card_surface" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <FrameLayout android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/bg_icon_yellow">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/ic_star_filled" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yêu thích" android:textColor="@color/cm_text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvFavorites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/cm_text_primary" android:textSize="24sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_marginEnd="6dp" android:background="@drawable/bg_card_surface" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <FrameLayout android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/bg_icon_purple">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/ic_calendar_outline" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lịch hẹn sắp tới" android:textColor="@color/cm_text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvUpcoming" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/cm_text_primary" android:textSize="24sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_marginStart="6dp" android:background="@drawable/bg_card_surface" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <FrameLayout android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/bg_icon_green">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/ic_notes_outline" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tương tác" android:textColor="@color/cm_text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvInteractions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/cm_text_primary" android:textSize="24sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_card_surface" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Lịch hẹn sắp tới" android:textColor="@color/cm_text_primary" android:textSize="20sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/btnViewAppointments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem tất cả" android:textColor="@color/cm_primary" android:textStyle="bold"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/cm_outline"/>
+            <LinearLayout android:id="@+id/upcomingContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp"/>
+            <TextView android:id="@+id/tvUpcomingEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Chưa có lịch hẹn nào" android:textColor="@color/cm_text_secondary" android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_card_surface" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Liên hệ yêu thích" android:textColor="@color/cm_text_primary" android:textSize="20sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/btnViewFavorites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem tất cả" android:textColor="@color/cm_primary" android:textStyle="bold"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/cm_outline"/>
+            <LinearLayout android:id="@+id/favoritesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp"/>
+            <TextView android:id="@+id/tvFavoritesEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Bạn chưa đánh dấu liên hệ yêu thích" android:textColor="@color/cm_text_secondary" android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="24dp" android:background="@drawable/bg_card_surface" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Liên hệ gần đây" android:textColor="@color/cm_text_primary" android:textSize="20sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/cm_outline"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="TÊN" android:textColor="@color/cm_text_secondary" android:textSize="12sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CÔNG TY" android:textColor="@color/cm_text_secondary" android:textSize="12sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/recentContactsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+            <TextView android:id="@+id/tvRecentEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Chưa có liên hệ nào" android:textColor="@color/cm_text_secondary" android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

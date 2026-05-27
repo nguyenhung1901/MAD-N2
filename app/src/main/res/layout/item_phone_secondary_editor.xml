@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etSecondaryPhone"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/bg_input_soft"
+        android:hint="Số phụ"
+        android:inputType="phone"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/cm_text_primary"
+        android:textColorHint="@color/cm_text_secondary" />
+
+    <TextView
+        android:id="@+id/btnRemoveSecondaryPhone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_chip_idle"
+        android:gravity="center"
+        android:text="Hủy"
+        android:textColor="@color/cm_text_secondary"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quản lý danh bạ</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="menu_dashboard">Tổng quan</string>
+    <string name="menu_contacts">Danh bạ</string>
+    <string name="menu_appointments">Lịch hẹn</string>
+    <string name="menu_notes">Ghi chú</string>
+    <string name="menu_stats">Thống kê</string>
+    <string name="menu_settings">Cài đặt</string>
+</resources>

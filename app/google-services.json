@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "345403897567",
+    "project_id": "contact-managermant",
+    "storage_bucket": "contact-managermant.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345403897567:android:53d5143d09118729579b6a",
+        "android_client_info": {
+          "package_name": "com.example.contactmanagerprojava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345403897567-dnjdrcqks0sqpeg0ba94mf9f8b8m3d98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.contactmanagerprojava",
+            "certificate_hash": "620adbaf8180aa04f2e731e2906e83cd27a018c4"
+          }
+        },
+        {
+          "client_id": "345403897567-3llmalcies8avh87fr726nhq6utm589o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCASDZZhowZIgd8q4rHzDWO8ZRg6ZbSEE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345403897567-3llmalcies8avh87fr726nhq6utm589o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

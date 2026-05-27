@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="contact_labels">
+        <item>Không có nhãn</item>
+        <item>Gia đình</item>
+        <item>Bạn bè</item>
+        <item>Công việc</item>
+        <item>Khách hàng</item>
+        <item>Đối tác</item>
+        <item>Khẩn cấp</item>
+    </string-array>
+</resources>
